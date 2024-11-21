@@ -1,0 +1,102 @@
+File Management command in linux
+*********************************
+-------------------------------------------------------------------------------------------------
+ls                                          -list directory contents in folder
+ls -l                                       -long format that displays detailed information about files and directorys
+ls -a                                       -represent all files including hidden files
+ls -t                                       -sort files and directories btheir last modification time
+ls -r                                       -known as reverse order which is used to reverse the default order
+ls -R                                       -list the file and directories including subdirectories
+ls -S                                       -sort the file and directories by their size, listing the largest ones first
+ls -i                                       -inode which displays the index number of each file & directories
+ls -g                                       -group displays the group ownership of the file and dirctories iinsted of the ownership
+ls -h                                       -print file sizes in human readable format
+ls -d                                       -list the the directories
+
+-------------------------------------------------------------------------------------------------
+touch (filename)                             -creating file
+touch filename1 filename2 filename3          -multi file creation
+touch -t yymmddhhmm filename                 -this is used to create a file using a specified time
+
+-------------------------------------------------------------------------------------------------
+mkdir directoryname                          -creating directory
+-------------------------------------------------------------------------------------------------
+cat filename                                 -view the contents in file 
+cat finename1 filename2                      -view multiple files
+cat -n filename                              -view file with line number
+cat > filename                               -add content to file and over ride the content
+cat >> filename                              -append the content to file
+cat filename1 filename2 > mergedFilename     -copy the content of one file to anothe file in linux
+tac filename                                 -tac is the revers of the cat it is used to print in revers order
+cat *.txt                                    -display content of all text file in a folder  using cat command
+
+-------------------------------------------------------------------------------------------------
+cp filename destinationpath                  - it copies the contents of the first file to the second file (if the second file doesnt exist it is created and the content is copied into it if second file is exist it is overwritten without waring)
+cp file1 file2 file3 direcory                -it is copes each source file to the destination directory with the same argument(if the destination directory does not exit it is created if it created if it already exist the file are over written without warning)
+cp -r directory1 directory2                  -copy of directory
+
+-------------------------------------------------------------------------------------------------
+mv filename newfilename                      -renameing the file and directorys
+mv filename destinationfolder_path           -moves the file 
+mv file1 file2 file3 destination_path        -moves the files in directory
+mv -f sourcefile_or_direc destinationfile_or_destinationdirectorypath -overwritting the destination file 
+mv -n filename1 filename2                    -prevents an existing file being overwritten
+
+-------------------------------------------------------------------------------------------------
+rm filename                                  -deleted file
+rmdir directoryname                          -emty directory only deleted
+rm -r directoryname                          -not emty directory
+rm -rf direcory
+
+------------------------------------------------------------------------------------------------
+grep -i "word" file.txt                     -searching unic word 
+grep -c "word" file.txt                     -number of unick veriable
+grep -w "word" file.txt                     -searching word in file 
+grep -o "word" file.txt                     -display the mached pattarn
+--------------------------------------------------------------------------------------------------
+general commands in linux system
+--------------------------------------------------------------------------------------------------
+pwd                                         -current working directory
+pwd -L                                      -prints the symbolic destination_path
+pwd -P                                      -  
+---------------------------------------------
+man command                                 -gives info of command
+cal 08 2000                                 -calendar
+cal -y                                      -year
+--------------------------------------------
+wc file.txt                                 -word count
+wc -l file.txt file2.txt                    -maltipal file count
+wc -m file.txt                              -caractar count
+-------------------------------------------------------------------------------------------------------
+echo "word to print"                        -printing meage
+echo "hello \n i am \n learning"            -\n new line 
+df                                          -disk free comman used to provide a snapshot of disk usage
+df file.txt                                 -memory usage
+cd ..                                       -come up
+cd --                                       -come down
+cd path                                     -path        
+uname -a                                    -it prints the all system information
+uname -s                                    - provides the kernal name 
+clear                                       -clears the terminal in linux
+ps                                          -process is a running instance of a program
+ps -A                                       -list of all running processes in stystem
+ps -a                                       -View all processes except both session leaders and processes not associated with a terminal
+ps -d                                       -session leader is a process that initiates other processes. view processes except session leaders
+ps -a -N                                    -If you want to see only session leader and processes not associated with a terminal. Then, run 
+kill pid                                    -kill the process id
+locate file.txt                             -
+locate "*.html" -n 20 
+locate -c [.txt]*
+whoami   -current user
+sort file.txt
+sort -r file.txt                           
+history                                    -cammand line history
+history 20                                 -20 commad line history
+history | grep "word to serch"             -serch the commad are parfomed
+more                                       -viewing text files in commad prompt
+----------------------------------------------------------------------------------------------------------
+curl url                                   -get web content
+wget url                                    -downloads the internet file
+------------------------------------------------------------------------------------------------------------
+zip newzipfilename.zip file1.txt file2.txt file3.txt
+unzip zipfile.zip

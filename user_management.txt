@@ -1,0 +1,32 @@
+                                 user Management
+                                 ***************
+---------------------------------creating user----------------------------------------------------------------------------------------
+useradd username                                       -add user
+adduser username                                       -add user 
+---------------------------------creating group and add user and delete---------------------------------------------------------------
+groupadd groupname                                     -create group name
+usermod -aG groupname username                         -appends the user to a new group without removing them from any existing groups
+groups username                                        -chack the member is added or not in to the group
+groupdel groupname                                     -create group
+gpasswd -d username groupname                          -remove user from group
+-------------------------------------------------------------------------------------------------------------------------------------
+userdel -r username                                    -delete the user 
+deluser username                                       -delete user 
+deluser --remove-home username                         -deletena user and removeing their home directory 
+-------------------------------user_password-----------------------------------------------------------------------------------------
+passwd username (enter password)                      -se password
+passwd -l username                                    -lock the user password
+passwd -u username                                    -unlock password
+-------------------------------user_info--------------------------------------------------------------------------------------------
+id username                                           -info of user
+who                                                   -list all currently logged in user
+w                                                     -show who is logged in and what they are doing
+last                                                  -last login history of user
+-------------------------------switch user------------------------------------------------------------------------------------------
+su username                                           -switch to another account
+sudo su                                               -switch to root user
+-------------------------------edit user-------------------------------------------------------------------------------------------
+cd /etc/passwd                                        -file containing user account information
+cd /etc/shadow                                        -encrypted password data 
+cd /etc/group                                         -group info
+------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,69 @@
+process Management
+-------------------
+ps                                  -list of current active processes
+ps aux                              -displays all processes from all user
+ps -ef                              -full format listing of all processes
+top                                 -interactive tool to monitor processes and system usage in real time
+                                     (top command is used to list all the running processes in linux system. it displays detailde informetion such as PID, Username,CPU usage ,time execution)
+htop                                -enhansced vertion of top
+pstree                              -display running processes in tree like format
+pidof process_name                  -get pdi of a process by name pattern
+pgrep  
+
+shell:
+       commands are passes to the shell which reads the command and execute it.
+        shell is a method for the user to interact with the system 
+        default shell in linux is call bash (bourne again shell).
+        [NOTE: 1)built in commands and 2)external commands]
+
+locating the processes:
+        to kill a process, we have to access the process infoormation.
+        there are various commands to track a process such as top,ps,pgrep,pidof
+
+
+memory Management
+*****************
+==================================================================================================================================================================
+free -m                -he Free Command is the easiest and simplest command to use for checking memory use on Linux.
+cat /proc/meminfo      -These are rather virtual files that contain dynamic kernel and system information
+vmstat -s              -The vmstat command with the s option lays out the memory usage statistics much like the proc command. 
+top                    -Typically, the top command is used to check the memory and CPU consumption per cycle. But it also records the total use of memory and can be used to track the total usage of RAM.
+demidecode 
+=================================================================================================================================================================
+process
+*******
+=================================================================================================================================================================
+1)back ground process
+
+2)fore ground process        control+z  force stop process 
+ 
+ sleep 5  -is a foreground process to stop this process press cntrol+Z force stop
+ jobs     -to get list of jobs 
+
+ ==============================
+ bg       -to get all pending and forced stoped in back ground
+ fg       -To run all the pending and force stopped jobs in the foreground.
+================================
+
+
+ ps                                         -currently runing process
+ ps aux                                     -detailed list of all running process
+ ps -p (pid)                                -specific process id 
+ ps -ef                                     -detaildevie of all process in different format including perent prcess id
+ nohup sleep 100 &                          -To run a process in the background without getting impacted by the closing of the terminal.
+ ps -e                                       -or ps -A -all process
+ ps -ef --forest                            -perent and child reletion
+ sleep 10&                                   -directly run in background
+ 
+zip
+unzip
+gzip
+gunzip
+
+awk
+shutdown 
+reboot
+mountt
+umount
+
+

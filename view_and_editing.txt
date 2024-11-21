@@ -1,0 +1,10 @@
+cat filename.txt
+curl url
+nano file.txt
+less -n 2 f.txt
+head -n 20
+tail txt
+terminal
+vi
+vim
+
